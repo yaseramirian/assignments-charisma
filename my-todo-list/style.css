@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 95%;
+  width: 80%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.left-side img {
+  height: 0;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.new i {
+  position: absolute;
+  color: #38a1ff;
+  right: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+input,
+li {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0 3rem 0 1rem;
+}
+
+input {
+  border: 2px solid #38a1ff;
+  font-size: 1.3rem;
+  color: #38a1ff;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(216, 216, 216);
+}
+
+.options-holder {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  width: 25%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgba(198, 227, 255, 0.5);
+  color: #38a1ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button i {
+  margin-left: 0.3rem;
+}
+
+.filter-selector {
+  width: 25%;
+  margin-right: 1.2rem;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzg0IDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkyIDM4NGMtOC4xODggMC0xNi4zOC0zLjEyNS0yMi42Mi05LjM3NWwtMTYwLTE2MGMtMTIuNS0xMi41LTEyLjUtMzIuNzUgMC00NS4yNXMzMi43NS0xMi41IDQ1LjI1IDBMMTkyIDMwNi44bDEzNy40LTEzNy40YzEyLjUtMTIuNSAzMi43NS0xMi41IDQ1LjI1IDBzMTIuNSAzMi43NSAwIDQ1LjI1bC0xNjAgMTYwQzIwOC40IDM4MC45IDIwMC4yIDM4NCAxOTIgMzg0eiIgZmlsbD0iIzM4YTFmZiIgY2xhc3M9ImZpbGwtMDAwMDAwIj48L3BhdGg+PC9zdmc+");
+  background-size: 0.8rem;
+  background-position: calc(100% - 2rem) center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  outline: 0;
+  color: #38a1ff;
+  background-color: rgba(198, 227, 255, 0.5);
+}
+
+ul {
+  width: 100%;
+}
+
+.list-holder {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  height: 1.5rem;
+  border-left: 1.5px solid;
+  border-radius: 0;
+  cursor: default;
+  font-size: 1rem;
+}
+
+.list i {
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgba(156, 156, 156, 0.5);
+}
+
+.list i:nth-child(2) {
+  padding-right: 1.3rem;
+}
+
+.fa-circle-check:hover {
+  color: #1d9f75;
+}
+
+.fa-trash:hover {
+  color: #dc3444;
+}
+
+.done {
+  opacity: 0.5rem;
+  color: rgb(158, 158, 158);
+}
+
+.done li {
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 350px) {
+  h1 {
+    font-size: 3rem;
+  }
+  select {
+    background-position: calc(100% - .8rem) center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 90%;
+  }
+
+  .left-side {
+    width: 50%;
+  }
+
+  .left-side img {
+    height: 50%;
+  }
+
+  .right-side {
+    width: 50%;
+    margin-left: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-side {
+    width: 50%;
+  }
+
+  .left-side img {
+    height: 70%;
+  }
+
+  .right-side {
+    width: 50%;
+    margin-left: 5rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  li {
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .list {
+    margin-bottom: 2rem;
+  }
+
+  .list i {
+    font-size: 1.5rem;
+  }
+}
